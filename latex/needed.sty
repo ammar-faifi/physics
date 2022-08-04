@@ -1,0 +1,30 @@
+\ProvidesPackage{needed}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{empheq}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{sectsty}
+\usepackage{linegoal}
+\usepackage{wrapfig}
+\usepackage{siunitx}
+
+\definecolor{c1}{gray}{0.9}
+\definecolor{g2}{gray}{0.4}
+\definecolor{c2}{RGB}{230, 240, 255}
+\definecolor{c3}{RGB}{80, 90, 140}
+\chapterfont{\color{c3}}
+\sectionfont{\color{g2}}
+\newcommand{\ihat}{\hat{\imath}}
+\newcommand{\jhat}{\hat{\jmath}}
+\newcommand{\khat}{\hat{k}}
+\newcommand{\prm}[1]{#1^\prime}
+\newcommand{\coloredeq}[2]{\begin{empheq}[box=\colorbox{c2}]{align}\label{#1}#2\end{empheq}}
+% \newcommand{\coloredpar}[1]{\begin{empheq}[box=\colorbox{c2}]{\parbox[c]{0.9\linewidth}{#1}}}
+\newcommand{\coloredpar}[1]{\colorbox{c2}{\parbox[c]{0.9\linegoal}{#1}}}
+\DeclareMathOperator{\rank}{rank}
+% \numberwithin{equation}{section}
+% \pagecolor{black}
+% \color{white}
