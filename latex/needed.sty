@@ -17,14 +17,20 @@
 \definecolor{c3}{RGB}{80, 90, 140}
 \chapterfont{\color{c3}}
 \sectionfont{\color{g2}}
+\newcommand{\test}[1]{\textit{TEST#1}}
 \newcommand{\ihat}{\hat{\imath}}
 \newcommand{\jhat}{\hat{\jmath}}
 \newcommand{\khat}{\hat{k}}
 \newcommand{\prm}[1]{#1^\prime}
 \newcommand{\coloredeq}[2]{\begin{empheq}[box=\colorbox{c2}]{align}\label{#1}#2\end{empheq}}
-% \newcommand{\coloredpar}[1]{\begin{empheq}[box=\colorbox{c2}]{\parbox[c]{0.9\linewidth}{#1}}}
 \newcommand{\coloredpar}[1]{\colorbox{c2}{\parbox[c]{0.9\linegoal}{#1}}}
+\newcommand{\starpar}{\paragraph{\color{c3}$\bigstar$}}
+\newcommand{\bulletpar}{\paragraph{\color{c3}$\bullet$}}
+\newcommand{\ic}[1]{\textit{#1}}
+\newcommand{\bd}[1]{\textbf{#1}}
+
 \DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\tr}{Tr}
 % \numberwithin{equation}{section}
 % \pagecolor{black}
 % \color{white}

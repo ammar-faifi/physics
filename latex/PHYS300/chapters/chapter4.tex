@@ -1,0 +1,66 @@
+\chapter{Vector Analusis}
+    \section{Theorems}
+        \paragraph{Line Integral} The line integral for $f(x, y)$; $x=x(t)$ \& $y=y(t)$
+            \begin{align*}
+                \int_C f(x, y)\, ds = \int_a^b f(x(t), y(t))L\, dt
+            \end{align*}
+            The integral of '$f(x, y)$' along '$C$' with respect to '$x$'. Or,
+            \begin{align*}
+                \int_C f(x, y)\, dx\, dy = \int_a^b f(x(t), y(t)) x'(t)\, dt
+            \end{align*}
+            where $x'(t) dt = dx$.
+
+        \starpar $\vec{r}(t) = (1-t)\vec{r_1} + \vec{r_2}$
+
+        \paragraph{Line integral of vector fields}
+            If $\vec{F} = P\ihat + Q\jhat + R\khat$, where $Q$, $P$, and $R$ are scalra functions of $(x, y, z)$.
+            \begin{align*}
+                \int_C \vec{F} \cdot d\vec{r} = \int_a^b \vec{F}(\vec{r}(t)) \cdot \vec{r'}(t) dt = \int_C \vec{F} \cdot \vec{T}\, ds\\
+                \Rightarrow \int_C P\, dx + Q\, dy + R\, dz
+            \end{align*}
+            where $\vec{T}$ is the unit tangent vector. 
+
+        \paragraph{Fundamental theorem for line integral}
+            \[ \int_a^b F'(x)\, dx = F(b) - F(a) \]
+            
+            \[
+                \int_C \nabla{f} \cdot d\vec{r} = \int_C df = \vec{r}(b) - \vec{r}(a)
+            \]
+            which says that the line integral of $\nabla{f}$ is the \underline{net} change in $f$.
+            Note that $\oint \vec{F} \cdot d\vec{r} = 0$
+
+        \paragraph{Green's Theorem}
+            \[
+                \oint_C \vec{F} \cdot d\vec{r} = \oint_R P\, dx + Q\, dy 
+                = \int_R \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}  \right) \, dA
+                \]
+            let $ \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = 1$  to get the area $A$.
+
+            In vector form 
+            \[
+                \oint_R \vec{F} \cdot d\vec{r} = \int_D \nabla{\vec{F}} \cdot \khat\, dA
+                \]
+            As an special case of Stoke's theorem
+            The integral of the tangential component of $\vec{F}$ \underline{along} $C$ is the the double integral of the vertical component of curl$\vec{F}$
+            \underline{over} the region $D$ enclosed by $C$. Also we have
+            \[
+                \oint_R \vec{F} \cdot \hat{n} \, ds = \int_D \nabla \cdot \vec{F}\, dA 
+                \]
+            The line integral of the normal component of $\vec{F}$ \underline{along} $C$ is the double integral of the divergence of $\vec{F}$ 
+            \underline{over} region $D$ enclosed by $C$.
+
+            \starpar tangent $d\vec{r} = dx \ihat + dy \jhat + dz \khat$
+            \starpar normal  $ \hat{n} ds = dy \ihat - dx \jhat$
+
+        \paragraph{Stoke's Theorem} 
+        \[ 
+            \oint_C \vec{F} \cdot d\vec{r} = \int_S \nabla \times \vec{F} \cdot d\vec{S}
+            \]
+        The line integral \underline{around} the boundry curve of $S$ of the tangential component of $\vec{F}$ is the the surface integral \underline{over}
+        $S$ of the normal component of curl$\vec{F}$.
+
+        \paragraph{Divergence Theoprem}
+        \[
+            \oint_A \vec{F} \cdot d\vec{s} = \int_E \nabla \cdot \vec{F} dV 
+            \]
+        The flux of $F$ \underline{across} the boundry surface of $E$ is the triple integral of the divergence of $F$ \underline{over} $E$.

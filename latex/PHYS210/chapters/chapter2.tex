@@ -1,0 +1,104 @@
+\chapter{Complex Numbers} \label{ch:complex-numbers}
+        \section{Introduction}
+            The \textit{imaginary} number is written as $i=\sqrt{-1}$. We use the term \textit{complex numbe}r to 
+            mean any one of the whole set of numbers, \textit{real}, \textit{imaginary}, or combinations of the two
+            \begin{itemize}
+                \item The complex number can araise from the quadratic equation \coloredeq{eq:quad}{az^2+bz+c=0}
+                \item Where $z$ is a unknown variable and its solution is 
+                \coloredeq{eq:quad-sol}{z=\frac{-b\pm\sqrt{b^2-4ac}}{2a}}
+                if the \textit{discriminant} $d=b^2-4ac<0$, $z$ will be a complex number.
+                \item Notice the pattern if $i$ to power of some numbers \coloredeq{eq:i-short}{i^2=-1,\, i^3=-i,\, i^{4n}=1}
+                \item A \textit{complex} number such $3+5i$ has two parts a \textit{real part} (here, $3$) 
+                and an \textit{imaginary part} $(5)$.
+            \end{itemize}
+        \section{The Complex Plane}
+            \begin{itemize}
+                \item The rectangular coordinates representation for a complex number in the form 
+                \colorbox{c1}{$x+yi$} is $(x, y)$.
+                \item In the polar coordinates recall that \coloredeq{eq:polar}{x&=r\cos{\theta},\\ y&=r\sin{\theta}}
+                \item Then we have (by euler formula) assigned to $z$. All $\theta$ are in \textit{radian}.
+                \coloredeq{eq:polar euler z}{z=x+yi=r(\cos{\theta}+i\sin{\theta})=re^{i\theta}}
+                \item The \textit{modulus} or \textit{absolute value} of $z$ is
+                \coloredeq{eq:abs-z}{|z|=r=\sqrt{x^2+y^2}=\sqrt{z\bar{z}}}
+            \end{itemize}
+        \section{Complex Algebra}
+            \begin{itemize}
+                \item Note that in Eq:\eqref{eq:abs-z} $\ge0$, always real.
+                \item The \textit{conjugate} of $z$ is found by substituting $\theta=-\theta$ in Eq:\eqref{eq:polar euler z}
+                \coloredeq{eq:conj-z}{\bar{z}=r(\cos{\theta}-i\sin{\theta})=re^{-i\theta}}
+                \item Inotherwords,anyequation involving complex numbers is really two equations involving real numbers.
+            \end{itemize}
+        \paragraph{Complex Equations}
+        In other words, any equation involving complex numbers is really two equations involving real numbers.
+            
+        \section{Complex Infinite Series}
+            \begin{itemize}
+                \item The partial sums of a series of complex numbers will be complex numbers.
+                \item It can be written as \colorbox{c1}{$S_n=X_n+Y_ni$} where $X_n$ and $Y_n$ are real.
+                \item \textit{Convergence} is defined just as real series: if $S_n$ approaches a limit
+                ($S=X+Yi$) as $n\to\infty$, we call the series convergent and call $S$ its sum.
+                \item This means that $X_n \to X$ and $Y_n \to Y$.
+                \item It can be proved that an \textit{absolutely convergent series} converges, 
+                recall that Eq:\eqref{eq:abs-z} is positive term.
+                \item $\sum_{n=0}^\infty \, z^n$ ia a geomtric series, with ratio $=z$ 
+                and convergent when $|z|<1$.
+            \end{itemize}
+            \paragraph{$\bigstar$} Thus any of the tests given in Chapter:\ref{ch:series} for convergence of 
+            series of positive terms may be used here to test a \textit{complex series} for \textit{absolute convergence}.
+
+        \section{Complex Power Series}
+            They are in form of \coloredeq{eq:general z power series}{\sum \, a_nz^n} where $z=x+yi$ 
+            and $a_n$ are complex numbers.
+            \begin{itemize}
+                \item Note that Eq:\eqref{eq:general z power series} includes the \textit{real series} 
+                as a special case when $y=0$.
+            \end{itemize}
+
+        \section{Euler's Formula}
+            To derive Euler's Formula, for real $\theta$ we have from Chapter:\ref{ch:series}
+            \coloredeq{eq:sin theta}{\sin{\theta}&=\dots\\
+            \cos{\theta}&=\dots}
+            thus we have \coloredeq{eq:euler formula}{e^{i\theta}=\cos{\theta}+i\sin{\theta}}
+
+        \section{Powers and Roots of Complex Numbers}
+            \begin{itemize}
+                \item The $n$th power (and $n$th root) of $z$ is given by 
+                \coloredeq{eq:nth power of z}{z^n=(re^{i\theta})^n=r^ne^{ni\theta}}
+                \item When $r=1$ Eq:\eqref{eq:nth power of z} becomes \textbf{DeMoivre’s theorem}
+                \coloredeq{eq:DeMoivere}{(e^{i\theta})^n=(\cos{\theta}+i\sin{\theta})^n=\cos{n\theta}+i\sin{n\theta}}
+            \end{itemize}
+
+        \section{The Exponential and The Trigonometric}
+            \begin{itemize}
+                \item Although we have already defined $e^z$ by a power series $e^z=\sum_{n=0}^\infty \, \frac{z^n}{n!}$, 
+                it is worth while to write it in another form.
+                \coloredeq{eq:e^z power series}{e^z=e^{x+yi}=e^xe^{yi}=e^x(\cos{y}+i\sin{y})}
+                \item We have already seen that there is a close relationship [Euler’s formula \eqref{eq:euler formula}]
+                between complex exponentials and trigonometric functions of real angles. It is useful 
+                to write this relation in another form.
+                \item from Eq\eqref{eq:euler formula} we can rearrange it to
+                \coloredeq{eq:euler trig of theta}{\sin{\theta}&=\frac{e^{i\theta}-e^{-i\theta}}{2i}\\
+                \cos{\theta}&=\frac{e^{i\theta}+e^{-i\theta}}{2}}
+                \item It can be shown that in Eq\eqref{eq:euler trig of theta} $\theta$ can be $z$ a complex number.
+                \item The rest of the trigonometric functions of $z$ are defined in the usual way in terms of these.
+                
+                $\bigstar$ If $z$ is a complex number, $\sin{z}$ and $\cos{z}$ can have \textit{any} value we like.
+            \end{itemize}
+
+        \section{Hyperbolic Functions}
+            \begin{itemize}
+                \item Let us look at $\sin{z}$ and $\cos{z}$ for pure imaginary $z$ in Eq\eqref{eq:euler trig of theta}, that is, $z = iy$:
+                \begin{align} \label{eq:euler trig of yi}
+                    \sin{yi}&=\frac{e^{-y} - e^{y}}{2i} = i \frac{e^y-e^{-y}}{2}\\
+                    \cos{yi}&=\frac{e^{-y} + e^{y}}{2} = \frac{e^y + e^{-y}}{2}
+                \end{align}
+                \item The real functions on the right have special names because these particular 
+                combinations of exponentials arise frequently in problems. They are called the hyperbolic. 
+                Their definitions for all $z$:
+                \coloredeq{eq:z hyperbolic sin&cos} 
+                {\sinh{z}&=\frac{e^{z} - e^{-z}}{2}\\
+                \cosh{z}&=\frac{e^{z} + e^{-z}}{2}}
+                \item The other hyperbolic functions are definded as in normal trig. functions.
+                \item Thus from Eq\eqref{eq:euler trig of yi} we have:
+                \coloredeq{eq:trig-hyper equivlent}{\sin{yi} &=i \sinh{y}\\ \cos{yi} &= \cosh{y}}
+            \end{itemize}

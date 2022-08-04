@@ -1,0 +1,95 @@
+\chapter{Series} \label{ch:series}
+        \section{Infinite Series}
+
+            \begin{itemize}
+                \item A \textit{sequence} is simply a set of quantities, one for each n, represented with $a_n$. 
+                \item A \textit{series} is an indicated sum of such represented with $'\sum'$ symbol.
+                \item In general \textbf{infinite series} can be written as $ \Rightarrow  a_1 + a_2 + a_3 + \dots + a_n + \dots $
+                \item The geomtric series are written as $ \Rightarrow a+ar+ar^2+\dots+ar^{n-1} + \dots$
+                \item or in short notation: $ \Rightarrow \sum_{n=1}^{\infty} a_n $
+                \item The sum first of first: \textit{n} term is \colorbox{c1}{$ S_n=\frac{a(1-r^n)}{1-r} $}
+                \begin{quote}
+                    $\bigstar$ The sum of an infinite series is the limit of the sum of $n$ terms as $n\to\infty$.
+                    The \textit{sum of series} is \colorbox{c1}{$ S = \lim_{n \to \infty} S_n=\frac{a}{1-r}$}
+                \end{quote}
+                
+                \begin{quote}
+                    $\bigstar$ The geomtric series have a finite sum if and only if $|r|<1$.\\
+                    Then the series is called \textit{convergent}, Otherwise it is called \textit{divergent}.
+                \end{quote}
+                \item the \textit{remainder} (or the remainder after $n$ terms) is \colorbox{c1}{$R_n=S-S_n$}.\\
+                Thus, \colorbox{c1}{$\lim_{n\to\infty}\, R_n = 0$.}
+                % \coloredeq{R_n=S-S_n \\ \lim_{n\to\infty}\, R_n = 0}.
+                
+            \end{itemize}
+
+
+        \section{Series Tests}
+
+            \begin{itemize}
+                \item If the terms of an infinite series do not tend to zero
+                (that is, if a $\lim_{n\to\infty}\,$), the series diverges. 
+                If $\lim_{n\to\infty}\, a_n=0$, we must test further (Except the alternating series).
+                \item An alternating series is an example of a \textit{conditional series}.
+                \item Its positive or negative terms (alone) \textit{diverges}, thus we can control 
+                to which number (the sum, S) such series approaches.
+                \item Physically, We cannot stop at some point and say that the rest of the series is 
+                negligible as we could in the bouncing ball problem in Section 1.
+                \item But if we specify the order in which the charges are to be placed, then the sum 
+                $S$ of the series is determined ($S$ is probably different from $F$ in (8.1) unless 
+                the charges are placed alternately).
+            \end{itemize}
+                
+            \paragraph{$\bigstar$} 
+                The convergence or divergence of a series is not affected by multiplying 
+                every term of the series by the same nonzero constant. Neither is it affected by 
+                changing a finite number of terms (for example, omitting the first few terms).
+
+            \paragraph{$\bigstar$}
+                Two \textit{convergent} series $\sum_{n=1}^{\infty}\, a_n$ and $\sum_{n=1}^{\infty}\, b_n$
+                may be added (or subtracted) term by term ($a_n+b_n$).
+                The resulting series is \textit{convergent}, and its sum is obtained
+                by adding (subtracting) the sums of the two given series.
+            
+            \paragraph{$\bigstar$}
+                The terms of an \textit{absolutely convergent series} may be rearranged in 
+                any order without affecting either the \textit{convergence} or the \textit{sum}. This is not 
+                true of \textit{conditionally convergent series} as we have seen in Section 8.
+
+        \section{Power Series}
+            It is distiguished by having a varible $x^n$ in its terms multiply by a constant.\\
+            By definition: \coloredeq{eq:power}{\sum_{n=0}^{\infty}\, a_n(x-a)=a_0+a_1(x-a)^1+a_2(x-a)^2+\dots}.
+            \begin{itemize}
+                \item The \textit{radius of convergence} $R$ of Eq:\ref{eq:power} depends on $x$ values .
+                \item We find $R$ by the \textit{ratio test} so that $L<1$.
+            \end{itemize}
+
+        \paragraph{$\bigstar$}
+            We see then that a power series (within its interval of convergence) defines a 
+            function of $x$, namely $S(x)$.
+
+        \paragraph{Theorems}
+            \begin{enumerate}
+                \item A power series may be differentiated or integrated term by term; 
+                the resulting series converges to the derivative or integral of the function 
+                represented by the original series \textit{within} the same interval of convergence as the 
+                original series (that is, not necessarily at the endpoints of the interval).
+                \item Two power series may be added, subtracted, or multiplied; the resultant series 
+                converges at least in the common interval of convergence. You may divide two series if 
+                the denominator series is not zero at $x = 0$, or if it is and the zero is canceled by 
+                the numerator [as, for example, in $(\sin{x})/x$; see (13.1)]. The resulting series will 
+                have \textit{some} interval of convergence (which can be found by the ratio test or more simply 
+                by complex variable theory—see Chapter 2, Section 7).
+                \item One series may be substituted in another provided that the values of the substituted series 
+                are in the interval of convergence of the other series.
+                \item The power series of a function is unique, that is, there is just one power series of the 
+                form $\sum_{n=0}^{\infty}\, a_nx^n$ which converges to a given function.
+            \end{enumerate}
+
+            \paragraph{$\bigstar$}
+                Expanding functions can be done using \textit{Taylor series}
+                \coloredeq{eq:taylor}{f(x)=\sum_{n=0}^{\infty}\, \frac{f^{(n)}(a)}{n!}(x-a)^n}
+            
+            \begin{itemize}
+                \item \textit{Maclaurin series} for $f(x)$ is a special case of Eq\eqref{eq:taylor} where $a=0$.
+            \end{itemize}

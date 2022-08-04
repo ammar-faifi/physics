@@ -1,0 +1,57 @@
+\documentclass{article}
+
+\usepackage{../needed}
+
+\title{PHYS210 - HW2}
+\author{Alfaifi, Ammar}
+\date{\today}
+
+\includeonly{chapters/chapter4}
+
+\begin{document}
+    \maketitle
+
+    \paragraph{}
+    This is a solution for the problem 2-22.
+    We want to find the equation of motion of a charged particle in an  
+    electromagnetic field using \textbf{Lorentz equation}.
+    If the electric field vector $\vec{E}$ and the magnetic field vector $\vec{B}$,
+    the force on a particle of mass $m$ that carries a charge $q$ and has a velocity
+    $\vec{v}$ is given
+    \begin{equation} 
+        \label{eq:lorentz}   
+        \vec{F} = q \vec{E} + q \vec{v} \times \vec{B}
+    \end{equation}
+    
+    where we assume $v \ll c$.
+    \paragraph{(a)} If there is no electeic field and the particle enters the
+    the magnetic field in direction perpendicular to the magnetic field. The 
+    particle follows a uniform circular motion with acceleration of $a_c=m \frac{v^2}{r}$
+    where $r$ is the radius of the path of the circular motion.
+    Thus, by Newton's second law we have
+    $$
+        F = ma_c \Rightarrow qvB sin(90^\circ) = m  \frac{v^2}{r}
+    $$
+    solving for $r$
+    $$ r = \frac{mv}{qB} = \frac{v}{\omega_c} $$
+    where $\omega_c \equiv qB/m$, is the \textit{cyclotron frequency}.
+
+    \paragraph{(b)} Choose the z-axis to lie in the direction of $\vec{B}$ and let
+    the plane containing $\vec{E}$ and $\vec{B}$ be the yz-plane. Thus,
+    $$
+        \vec{B} = B \hat{z}, \qquad \vec{E} = E_y \hat{y} + E_z \hat{z}
+    $$
+    Show that the z component of the motion is given by 
+    $$
+        z(t) = z_0 + \dot{z_0}t + \frac{qE_z}{2m} t^2
+    $$
+    where $z(0) \equiv z_0$, and $ \dot{z}(0) \equiv \dot{z_0}$.
+
+    Deviding both sides Eq.1, by $q$, we get
+    \begin{equation}
+        \frac{\vec{F}}{q} = (E_y \hat{y} + E_z \hat{z}) + (v_x \hat{x}+v_y \hat{y}+v_z \hat{z}) \times B \hat{z}
+    \end{equation}
+
+
+
+\end{document}

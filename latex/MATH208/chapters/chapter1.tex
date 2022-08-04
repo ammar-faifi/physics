@@ -1,0 +1,59 @@
+\chapter{First-Order Differential Equations}
+    \section{Differential Equations \& Mathmatical Models}
+        \begin{itemize}
+            \item An equation relating an unknown function and one or more of its derivatives 
+            is called a differential equation, such $\frac{dx}{dt}=x^2+t^2$.
+            \item The order of a differential equation is the order of the highest derivative that appears in it.
+            \item The most general form of an \textbf{$n$th-order} differential equation with 
+            independent variable 5 and unknown function or dependent variable $y=y(x)$ is
+            \begin{align} \label{nth-order}
+                F(x, y^{\prime}, y^{\prime \prime}, \dots, y^{(n)})=0
+            \end{align}
+            \item The continuous function $u=u(x)$ is a solution of the differential equation in \eqref{nth-order} 
+            on the interval $I$ provided that the derivatives $u^\prime, u^{\prime \prime}, \dots, u^{(n)}$ 
+            exist on $I$ and 
+            \begin{align}
+                F(x, u^{\prime}, u^{\prime \prime}, \dots, u^{(n)})=0
+            \end{align}
+            for all $x$ in $I$.
+            \item Then $u=u(x)$ \textbf{satisfies} the differential equation in \eqref{nth-order} on $I$.
+            \item An $n$th-order differential equation ordinarily has an $n$-parameter family of solutions.
+            \item  An \textbf{ordinary} \textit{differential equations} where the unknown function 
+                (dependent variable) depends on only a single independent variable.
+            \item We concentrate on first-order differential equations with initial condition to \textbf{solve}
+                \begin{align} \label{ODE with initial cond.}
+                    \frac{dy}{dx} = f(x, y), \quad y(x_0)=y_0
+                \end{align}
+                meameans to find a differentiable function $y=y(x)$ that satisfies both conditions in Eq.\eqref{ODE with initial cond.} 
+                on some interval containing $x_0$.
+        \end{itemize}
+
+    \section{Integrals as General \& Particular Solutions}
+        \begin{itemize}
+            \item As an especial case, if $f$ in Eq.\eqref{ODE with initial cond.} 
+                does not actually involve the dependent variable $y$, so
+                \coloredeq{ODE without y}{\frac{dy}{dx} = f(x)}
+                then we need only to take the integral of Eq.\eqref{ODE without y}, so 
+                \coloredeq{ODE-integral solution}{y(x) = \int f(x)\, dx + C}
+            \item Eq.\eqref{ODE-integral solution} is a \textbf{general solution} of Eq.\eqref{ODE without y}.
+            \item When applying an initial condition ($y_0=y(x_0)$), we get a \textbf{particular solution}.
+            \item This idea extends to second-order differential equations of the special form:
+                \coloredeq{secon-order De}{\frac{d^2y}{dx^2} = g(x)}
+                in which the function g on the right-hand side involves neither the dependent
+                variable $y$ nor its derivative $dy/dx$.                
+        \end{itemize}
+
+    \section{Separable Equations}
+        \begin{itemize}
+            \item In general, a first-order differential equation is called \textit{separable} 
+            provided that $f(x,y)$ can be written as the product of a function of $x$ and a function of $y$:
+            \coloredeq{general separable ODE}{\frac{dy}{dx} = f(x,y)=g(x)k(y)=\frac{g(x)}{h(y)}}
+            where $h(y)=1/k(y)$
+            \item So we can write informally
+            \begin{align} \label{separable ODE:1}
+                h(y)dy = g(x)dx
+            \end{align}
+            \item Which we can integrate both side as
+            \coloredeq{separable ODE solution}{\int h(y)\,dy = \int g(x)\,dx}
+            provided that both antiderivatives of $h(y)$ and $g(x)$ can be found.
+        \end{itemize}

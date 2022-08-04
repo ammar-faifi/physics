@@ -1,0 +1,126 @@
+\chapter{Linear Systems and Matrices} % (fold)
+\label{cha:Linear Systems and Matrices}
+    \section{Introduction to Linear Systems}
+        Consider the following equation 
+        \[ ax + by  +cz = d \qquad \text{or}\, ax + by = c \]
+        each one is called a \textbf{linear equation}; because the \textbf{variables} are power of one.
+
+        \bulletpar A \textbf{system} of linear equations (or \textbf{linear system}) is a finite collections of linear equations involving ceratin variables 
+        (\textit{unknowns}). for examole, \[ a_1 x + b_1 y = c_1 \\ a_2 x + b_2 y = c_2\] which is a linear system in two unkowns.
+        A \textbf{solution} is a pair of $(x, y)$ that satisfies \textit{both} equations \textit{simultaneously}.
+
+        \begin{itemize}
+            \item A \textbf{consistent} systems have at least one solution.
+            \item A \textbf{inconsistent} systems have no solution.
+        \end{itemize}
+        
+        \noindent
+        For a linear system, we havr three possiblities:
+        \begin{enumerate}
+            \item exactly on solution.
+            \item no solution.
+            \item infinitely many solutions.
+        \end{enumerate}
+
+        \paragraph{The Method of Eliminations}
+            \begin{enumerate}
+                \item Multiply one equation with nonzero number.
+                \item Interchange two equations.
+                \item Add a constant multiple of one equation to another equation.
+            \end{enumerate}
+
+        \paragraph{A Differential Equation}
+            Consider this equation 
+            \begin{align}
+                \label{eq:differential application:1}
+                y(x) = Ae^{nx} + Be^{-nx}
+            \end{align} 
+            after differentiation we get $$ y'(x) = nAe^{nx} - n Be^{-nx} $$
+            also
+            $$ y''(x) = n^2 A e^{nx} + n^2 B e^{-nx} = n^2 y(x)$$
+            Thus Eq.\eqref{eq:differential application:1} is a solution to the differential equation
+            \begin{align}
+                y'' - n^2y = 0 
+            \end{align}
+            to find the constant $A$ and $B$ we need to solve a linear systme after applying the initial condition.
+
+    \section{Matrices and Gaussian Elimination}
+        A general system of $m$ linear equation in $n$ variables $x_1, x_2, \dots, x_n$ written in form 
+        \begin{align}
+            \begin{aligned}
+                \label{eq:general system}
+                a_{11}x_1 + a_{12}x_2 + , \dots + a_{1n}x_n &= b_1 \\
+                a_{21}x_1 + a_{22}x_2 + , \dots + a_{2n}x_n &= b_2 \\
+                                                            &\vdots \\
+                a_{m1}x_1 + a_{m2}x_2 + , \dots + a_{mn}x_n &= b_m \\
+            \end{aligned}
+        \end{align}
+        The \textbf{coefficient matrix} of this linea system is written in $m \times n$ matrix 
+        \begin{align*}
+            A = \begin{bmatrix}
+                a_{11} & a_{12} & \dots & a_{1n} \\
+                a_{21} & a_{22} & \dots & a_{2n} \\
+                \vdots & \vdots & \ddots & \vdots \\
+                a_{m1} & a_{m2} & \dots & a_{mn}
+            \end{bmatrix}
+        \end{align*}
+        For large number of entries we can denote $a_{ij}$ as $a(i, j)$. The \textbf{constant matrix} is 
+        \begin{align*}
+            b = \begin{bmatrix}
+                b_1 \\ b_2 \\ \vdots \\ b_m
+            \end{bmatrix}
+        \end{align*}
+        This is called a \textbf{vector} (\textbf{column}) matrix. Combining both matrices we get a $m \times (n+1)$ \textbf{augmented matrix}
+        \begin{align*}
+            [A\, b] = \begin{bmatrix}
+                a_{11} & a_{12} & \dots & a_{1n} & b_1 \\
+                a_{21} & a_{22} & \dots & a_{2n} & b_2 \\
+                \vdots & \vdots & \ddots & \vdots & \vdots \\
+                a_{m1} & a_{m2} & \dots & a_{mn} & b_m
+            \end{bmatrix}
+        \end{align*}
+
+        \paragraph{Elemnetary Row Operations} % (fold)
+        \label{par:Elemnetary Row Operations}
+        As we did before for solving a linear sustem, we can generalize that for augmented matrices as 
+        \coloredeq{elemetary row operations}{\parbox[t]{0.8\linewidth}{
+            \textbf{Elemnetary Row Operations}
+            \begin{enumerate}
+                \item Multiply any row by a nonzero number.
+                \item Interchange two rows.
+                \item Add a constant multiple of one row to another row.
+            \end{enumerate}
+        }}
+        
+        \coloredeq{Row-Equivalent Matrices}{\parbox[t]{0.7\linewidth}{
+            \textbf{\color{g2}Row-Equivalent Matrices}\\
+            Two matrices are called \textbf{tow eauivalent} if one can be obtained from the pther by a finite sequence of elementary row opearations
+        }}
+
+        \coloredeq{theorem1}{\parbox[t]{0.7\linewidth}{
+            \textbf{\color{g2}THEOREM1:  Equivalent Systems and Equivalent Matrices}\\ \newline
+            If the augmneted coefficient matrices of two systems are row equivalent, then the two systems have the same solution set.
+        }}
+        % paragraph Elemnetary Row Operations (end)
+
+        \paragraph{Echelon Matrices} % (fold)
+        \label{par:Echelon Matrices}
+        Let us see how sould the augmented matrix look after some elementry row operations,
+        
+        \coloredeq{theorem1}{\parbox[t]{0.8\linewidth}{
+            \textbf{\color{g2}DEFINITION:  Echelon Matrix}\\ \newline
+            The matrix $E$ is called an \textbf{echelon matrix} provided it has the following two properties:
+            \begin{enumerate}
+                \item Every row that consists of entirely zeros (if any) liew \textit{beneath} every row that contains a nonzero element.
+                \item In each  row contains nonzero element, the \textit{first} nonzero element lies strictly to the right of the first nonzero element in the preceding 
+                row (if there is a preseding row).
+            \end{enumerate}
+        }}
+        % paragraph Echelon Matrices (end)
+
+
+
+
+
+
+% chapter Linear Systems and Matrices (end)

@@ -1,0 +1,133 @@
+\contentsline {chapter}{\numberline {1}Series}{2}%
+\contentsline {section}{\numberline {1.1}Infinite Series}{2}%
+\contentsline {section}{\numberline {1.2}Series Tests}{2}%
+\contentsline {paragraph}{$\bigstar $}{2}%
+\contentsline {paragraph}{$\bigstar $}{2}%
+\contentsline {paragraph}{$\bigstar $}{3}%
+\contentsline {section}{\numberline {1.3}Power Series}{3}%
+\contentsline {paragraph}{$\bigstar $}{3}%
+\contentsline {paragraph}{Theorems}{3}%
+\contentsline {paragraph}{$\bigstar $}{3}%
+\contentsline {chapter}{\numberline {2}Complex Numbers}{4}%
+\contentsline {section}{\numberline {2.1}Introduction}{4}%
+\contentsline {section}{\numberline {2.2}The Complex Plane}{4}%
+\contentsline {section}{\numberline {2.3}Complex Algebra}{4}%
+\contentsline {paragraph}{Complex Equations}{5}%
+\contentsline {section}{\numberline {2.4}Complex Infinite Series}{5}%
+\contentsline {paragraph}{$\bigstar $}{5}%
+\contentsline {section}{\numberline {2.5}Complex Power Series}{5}%
+\contentsline {section}{\numberline {2.6}Euler's Formula}{5}%
+\contentsline {section}{\numberline {2.7}Powers and Roots of Complex Numbers}{5}%
+\contentsline {section}{\numberline {2.8}The Exponential and The Trigonometric}{6}%
+\contentsline {section}{\numberline {2.9}Hyperbolic Functions}{6}%
+\contentsline {chapter}{\numberline {3}Linear Algebra}{7}%
+\contentsline {section}{\numberline {3.1}Introduction}{7}%
+\contentsline {section}{\numberline {3.2}Matrices: Row Reduction}{7}%
+\contentsline {section}{\numberline {3.3}Determinants; Carmer's Rule}{8}%
+\contentsline {paragraph}{$\bigstar $}{9}%
+\contentsline {paragraph}{Carmer's Rule}{9}%
+\contentsline {paragraph}{$\bigstar $}{9}%
+\contentsline {paragraph}{Rank of Matrix}{10}%
+\contentsline {section}{\numberline {3.4}Vectors}{10}%
+\contentsline {paragraph}{}{10}%
+\contentsline {paragraph}{Magnitude of a Vector}{10}%
+\contentsline {paragraph}{$\bullet $}{10}%
+\contentsline {paragraph}{Addition of Vectors}{10}%
+\contentsline {paragraph}{$\bullet $}{10}%
+\contentsline {paragraph}{$\bullet $}{10}%
+\contentsline {paragraph}{Vectors in Terms of Components}{10}%
+\contentsline {paragraph}{Multiplication of Vectors}{11}%
+\contentsline {paragraph}{Scalar Product}{11}%
+\contentsline {paragraph}{$\bullet $}{11}%
+\contentsline {paragraph}{Perpendicular and Parallel Vectors}{11}%
+\contentsline {paragraph}{Vector Product}{11}%
+\contentsline {paragraph}{Intresting properties:}{11}%
+\contentsline {paragraph}{$\bigstar $}{11}%
+\contentsline {section}{\numberline {3.5}Lines and Planes}{12}%
+\contentsline {paragraph}{$\bullet $}{12}%
+\contentsline {paragraph}{$\bullet $}{12}%
+\contentsline {paragraph}{$\bullet $}{12}%
+\contentsline {paragraph}{$\bullet $}{12}%
+\contentsline {paragraph}{$\bullet $}{13}%
+\contentsline {section}{\numberline {3.6}Matrix Operations}{13}%
+\contentsline {paragraph}{Matrix Equations}{13}%
+\contentsline {paragraph}{Multiplication of a Matrix by a Number}{13}%
+\contentsline {paragraph}{$\bullet $}{13}%
+\contentsline {paragraph}{$\bigstar $}{13}%
+\contentsline {paragraph}{Addition of Matrices}{13}%
+\contentsline {paragraph}{Multiplication of Matrices}{13}%
+\contentsline {paragraph}{Zero Matrix}{14}%
+\contentsline {paragraph}{Identity Matrix or Unit Matrix}{14}%
+\contentsline {paragraph}{Operations with Determinants}{14}%
+\contentsline {paragraph}{Applications of Matrix Multiplication}{14}%
+\contentsline {paragraph}{Inverse of a Matrix}{14}%
+\contentsline {paragraph}{$\bullet $}{14}%
+\contentsline {paragraph}{$\bullet $}{15}%
+\contentsline {section}{\numberline {3.7}Linear Combinations, Functions, and Opreators}{15}%
+\contentsline {paragraph}{$\bullet $}{15}%
+\contentsline {paragraph}{$\bullet $}{15}%
+\contentsline {paragraph}{$\bullet $}{15}%
+\contentsline {paragraph}{$\bullet $}{15}%
+\contentsline {paragraph}{$\bullet $}{15}%
+\contentsline {paragraph}{Matrix Operators, Linear Transformations}{16}%
+\contentsline {paragraph}{$\bullet $}{16}%
+\contentsline {paragraph}{$\bullet $}{16}%
+\contentsline {paragraph}{$\bullet $}{16}%
+\contentsline {paragraph}{Orthogonal Transformations}{16}%
+\contentsline {paragraph}{$\bigstar $}{16}%
+\contentsline {paragraph}{Rotations in 2 Dimensions}{17}%
+\contentsline {paragraph}{$\bullet $}{17}%
+\contentsline {paragraph}{$\bullet $}{17}%
+\contentsline {paragraph}{Rotations and Reflections in 3 Dimensions}{17}%
+\contentsline {section}{\numberline {3.8}Linear Dependence and Independence}{17}%
+\contentsline {paragraph}{Linear Independence of Functions}{17}%
+\contentsline {paragraph}{Homogeneous Equations}{17}%
+\contentsline {paragraph}{\color {c3}$\bullet $}{18}%
+\contentsline {section}{\numberline {3.9}Special Matrices and Formulas}{18}%
+\contentsline {paragraph}{Kronecker $\sigma $}{18}%
+\contentsline {paragraph}{Trace of a Matrix}{19}%
+\contentsline {section}{\numberline {3.10}Linear Vector Spaces}{19}%
+\contentsline {paragraph}{Subspace, Span, Basis, Dimension}{19}%
+\contentsline {paragraph}{\color {c3}$\bullet $}{19}%
+\contentsline {paragraph}{\color {c3}$\bullet $}{19}%
+\contentsline {paragraph}{\color {c3}$\bullet $}{19}%
+\contentsline {paragraph}{Inner Product, Norm, Orthogonality}{20}%
+\contentsline {paragraph}{Schwarz Inequality}{20}%
+\contentsline {paragraph}{Orthonormal Basis; Gram-Schmidt Method}{20}%
+\contentsline {paragraph}{\color {c3}$\bullet $}{20}%
+\contentsline {paragraph}{Complex Euclidean Space}{20}%
+\contentsline {paragraph}{\color {c3}$\bullet $}{20}%
+\contentsline {section}{\numberline {3.11}Eigenvalues and Eigenvectors; Diagonalizing Matrices}{20}%
+\contentsline {paragraph}{\color {c3}$\bullet $}{21}%
+\contentsline {paragraph}{\color {c3}$\bullet $}{21}%
+\contentsline {paragraph}{Diagonalizing a Matrix}{21}%
+\contentsline {paragraph}{\color {c3}$\bullet $}{21}%
+\contentsline {paragraph}{\color {c3}$\bullet $}{21}%
+\contentsline {paragraph}{\color {c3}$\bigstar $}{22}%
+\contentsline {paragraph}{\color {c3}$\bullet $}{22}%
+\contentsline {paragraph}{\color {c3}$\bullet $}{22}%
+\contentsline {paragraph}{Degeneracy}{22}%
+\contentsline {paragraph}{Diagonalizing Hermitian Matrices}{22}%
+\contentsline {paragraph}{\color {c3}$\bigstar $}{22}%
+\contentsline {paragraph}{\color {c3}$\bullet $}{22}%
+\contentsline {paragraph}{\color {c3}$\bigstar $}{22}%
+\contentsline {paragraph}{Powers and Functions of Matrices}{23}%
+\contentsline {section}{\numberline {3.12}An Introduction to Groups}{23}%
+\contentsline {paragraph}{A Group}{23}%
+\contentsline {paragraph}{\color {c3}$\bullet $}{23}%
+\contentsline {paragraph}{\color {c3}$\bullet $}{23}%
+\contentsline {paragraph}{\color {c3}$\bullet $}{23}%
+\contentsline {paragraph}{\color {c3}$\bullet $}{23}%
+\contentsline {paragraph}{\color {c3}$\bullet $}{23}%
+\contentsline {paragraph}{\color {c3}$\bullet $}{23}%
+\contentsline {chapter}{\numberline {4}Vector Analusis}{24}%
+\contentsline {section}{\numberline {4.1}Theorems}{24}%
+\contentsline {paragraph}{Line Integral}{24}%
+\contentsline {paragraph}{\color {c3}$\bigstar $}{24}%
+\contentsline {paragraph}{Line integral of vector fields}{24}%
+\contentsline {paragraph}{Fundamental theorem for line integral}{24}%
+\contentsline {paragraph}{Green's Theorem}{24}%
+\contentsline {paragraph}{\color {c3}$\bigstar $}{25}%
+\contentsline {paragraph}{\color {c3}$\bigstar $}{25}%
+\contentsline {paragraph}{Stoke's Theorem}{25}%
+\contentsline {paragraph}{Divergence Theoprem}{25}%

@@ -1,0 +1,132 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{PHYS306 - Summary Homework}
+\author{Alfaifi, Ammar S.}
+\date{\today}
+
+
+\begin{document}
+    \maketitle
+    \begin{abstract}
+        So far we have dealt with infinite-extent plane waves; now we need
+        to consider electromaganetic waves confined to the interior of a hollow
+        pipe, called \textbf{wave guide}
+    \end{abstract}
+    \paragraph{Boundary conditoins} % (fold)
+    \label{par:Boundary conditoins}
+        We assume the wave guide is perfect conductor, so that $\vec{E}=\vec{0}$
+        and $\vec{B}=\vec{0}$ inside the the material itself, thus the boundary
+        conditoins at the inner wall are
+        \begin{align}
+            \label{eq:boundary conditions}
+            \begin{cases}
+                \vec{E}^{||} = \vec{0} \\
+                \vec{B}^\perp = 0
+            \end{cases}
+        \end{align}
+    % paragraph Boundary conditoins (end)
+
+    \paragraph{Wave Equations} % (fold)
+    \label{par:Wave Equations}
+        Notice that free charges and currents will be induced at the surface
+        to enforce these constraints. We are intreseted in monochromatic waves
+        that propagate through the tube. Thus, $\vec{E}$ and $\vec{B}$ are in form
+        \begin{align}
+            \label{eq:fields form}
+            \begin{cases}
+                \vec{\tilde{E}}(x, y, z, t) = \vec{\tilde{E_0}}(x, y) e^{i(kz-\omega t)}, \\
+                \vec{\tilde{B}}(x, y, z, t) = \vec{\tilde{B_0}}(x, y) e^{i(kz-\omega t)}, \\
+            \end{cases}
+        \end{align}
+        Also the electric magnetic field must satisfy Maxwell's equations in the
+        interior of the wave guide:
+        \begin{align}
+            \label{eq:Maxwell's equation}
+            \begin{cases}
+                \vec{\nabla} \cdot  \vec{E} = 0 \qquad \vec{\nabla} \times \vec{E} = - \frac{\partial \vec{B}}{\partial t} \\
+                \vec{\nabla} \cdot  \vec{B} = 0 \qquad \vec{\nabla} \times \vec{B} = \frac{1}{c^2} \frac{\partial \vec{E}}{\partial t} \\
+            \end{cases}
+        \end{align}
+        Now we need just to find those amplitudes, $\vec{\tilde{E_0}}$ and $\vec{\tilde{B_0}}$,
+        such that the fields Eq.\eqref{eq:fields form} obey the differential equations 
+        Eq.\eqref{eq:Maxwell's equation}, subject to boundary conditions Eq.\eqref{eq:boundary conditions}.
+    % paragraph Wave Equations (end)
+
+    \paragraph{Longitudinla Component} % (fold)
+    \label{par:Longitudinla Component}
+        In general, \textit{confined} eaves are not transverse; in order to fit the boundary
+        conditoins we shall have to include longitudinal components $E_z$ and $B_z$:
+        \begin{align}
+            \label{eq:Amplitudes in componen form}
+            \vec{\tilde{E_0}} = E_x \hat{x} + E_y \hat{y} + E_z \hat{z} \qquad 
+            \vec{\tilde{B_0}} = B_x \hat{x} + B_y \hat{y} + B_z \hat{z} 
+        \end{align}
+        where each componen is a function of $x$ and $y$.
+    % paragraph Longitudinla Component (end)
+
+    Pluging Eq.9.180 into Maxwell-divergence equations yields:
+    \begin{align}
+        \label{eq:Z component equations}
+        \begin{cases}
+            \left[ \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} +(\omega/c)^2 + k^2 \right] E_z = 0 \\
+            \left[ \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} +(\omega/c)^2 + k^2 \right] B_z = 0
+        \end{cases}
+    \end{align}
+
+    If $E_z=0$, we call these \textbf{TE waves}; if $B_z=0$, they are called \textbf{TM waves};
+    if both vanishes, we call it \textbf{TEM waves}. But, TEM situatoin can never happen in
+    a hollow wave guide.
+    
+    \paragraph{TE Waves in a Recatngular Guide} % (fold)
+    \label{par:TE Waves in a Recatngular Guide}
+        Now we consider a wave guide of recatangular shape, with height $a$ and width $b$,
+        we want to study the propagation of TE waves.
+        Thus, the problem is to solve $B_z$ in Eq.\eqref{eq:Z component equations}, subject
+        to the boundary condition of $B$ in Eq.\eqref{eq:boundary conditions}. By separation of
+        varaiables,
+        \begin{align}
+            B_z(x, y) = X(x) Y(y)
+        \end{align}
+
+        so that 
+        \begin{align}
+            \frac{1}{X} \frac{d^2 X}{dx^2} +\frac{1}{Y} \frac{d^2 Y}{dy^2}
+            + \left[ (\omega/c)^2 -k^2 ) \right] =0
+        \end{align}
+
+        We notice that the $x$- and $y$-dependent terms must be constant, So
+        \begin{align}
+            \frac{1}{X} \frac{d^2 X}{dx^2} = -k_x^2 \qquad \frac{1}{Y} \frac{d^2 Y}{dy^2} =-k_y^2
+        \end{align}
+
+        The general solution is
+        \begin{align}
+            X(x) = A \sin{(k_x x)} + B \cos{(k_x x)}
+        \end{align}
+        But the boundary condition for $B_x$ must be zero, that is, $dX/dx=0$. This gives 
+        \begin{align}
+            k_x=m\pi / a, \quad k_y= n\pi/ b \qquad m, n=0, 1, 2, \dots
+        \end{align}
+        Finaly, the solution of $TE_{mn}$ mode is
+        \begin{align}
+            B_z = B_0 \cos{(m\pi / ax)} \cos{(n\pi /bx)}
+        \end{align}
+        The wave number is given by
+        \begin{align}
+            k= \sqrt{(\omega/c)^2 -\pi^2 [(m/a)^2 + (n/b)^2]}
+        \end{align}
+        If the vlaue under the root is negative, there will be no propagating wave, but an
+        exponentialy attenuated fileds. Hence we degine the \textbf{cutoff frequency} $\omega_{mn}$
+        as, 
+        \begin{align}
+            \text{lowest possible} < \omega_{mn} \equiv c\pi\sqrt{(m/a)^2 + (n/b)^2} \le \omega
+        \end{align}
+        The velocities are
+        \begin{align}
+            v=\frac{\omega}{k}, \qquad v_g= \left( \frac{dk}{d\omega} \right)^{-1}
+        \end{align}
+    % paragraph TE Waves in a Recatngular Guide (end)
+\end{document}

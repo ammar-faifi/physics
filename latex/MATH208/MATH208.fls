@@ -1,15 +1,15 @@
-PWD /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex
+PWD /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208
 INPUT /usr/local/texlive/2020/texmf.cnf
 INPUT /usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/summary.tex
-OUTPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/summary.log
+INPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/MATH208.tex
+OUTPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/MATH208.log
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/size10.clo
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/size10.clo
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/needed.sty
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/needed.sty
+INPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/../needed.sty
+INPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/../needed.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
@@ -99,9 +99,13 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/translator/translator.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/translator/translator.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/translator/translator.sty
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/summary.aux
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/summary.aux
-OUTPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/summary.aux
+INPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/MATH208.aux
+INPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/MATH208.aux
+INPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/chapters/chapter1.aux
+INPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/chapters/chapter1.aux
+INPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/chapters/chapter2.aux
+INPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/chapters/chapter2.aux
+OUTPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/MATH208.aux
 INPUT /usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
@@ -156,59 +160,42 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-OUTPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/summary.pdf
+OUTPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/MATH208.pdf
 INPUT /usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/MATH208.toc
+INPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/MATH208.toc
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+OUTPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/MATH208.toc
+OUTPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/chapters/chapter1.aux
+INPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/chapters/chapter1.tex
+INPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/chapters/chapter1.tex
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/Hertz_transmitter.png
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/Hertz_transmitter.png
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/Hertz_transmitter.png
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm0500.tfm
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/blackbody emission.png
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/blackbody emission.png
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/blackbody emission.png
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/standing wave.png
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/standing wave.png
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/standing wave.png
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/spectral energy density.png
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/spectral energy density.png
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/spectral energy density.png
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/photocurrent versus applied voltage.png
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/photocurrent versus applied voltage.png
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/photocurrent versus applied voltage.png
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/Kmax.png
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/Kmax.png
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/Kmax.png
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/x-ray acattering.png
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/x-ray acattering.png
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/figures/x-ray acattering.png
-INPUT /Users/ammaralfaifi/Documents/KFUPM/PHYS/PHYS213/latex/summary.aux
+OUTPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/chapters/chapter2.aux
+INPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/chapters/chapter2.tex
+INPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/chapters/chapter2.tex
+INPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/MATH208.aux
+INPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/chapters/chapter1.aux
+INPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/chapters/chapter1.aux
+INPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/chapters/chapter2.aux
+INPUT /Users/ammaralfaifi/Documents/KFUPM/latex/MATH208/chapters/chapter2.aux
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb
