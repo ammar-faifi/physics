@@ -1,5 +1,10 @@
 {
+    "python.formatting.provider": "black",
     "cSpell.enableFiletypes": [
         "!python"
+    ],
+    "cSpell.words": [
+        "eigenstates",
+        "wavefunction"
     ]
 }
