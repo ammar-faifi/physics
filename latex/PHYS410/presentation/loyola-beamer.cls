@@ -57,37 +57,37 @@
 
 % Draw background
 \setbeamertemplate{background canvas}{
-    \begin{tikzpicture}[remember picture,overlay,shift=(current page.north west)]
-    \begin{scope}[x={(current page.north east)},y={(current page.south west)}]
-        \draw[loyola-gold,line width=.5pt] (0.1,0) -- (0.1,0.98);
-        \draw[loyola-gold,line width=.5pt] (0.95,0.18) -- (0.98,0.18);
-        \draw[loyola-gold,line width=.5pt] (0.98,0.18) -- (0.98,0.98);
-    \end{scope}
-    \end{tikzpicture}
+	\begin{tikzpicture}[remember picture,overlay,shift=(current page.north west)]
+		\begin{scope}[x={(current page.north east)},y={(current page.south west)}]
+			\draw[loyola-gold,line width=.5pt] (0.1,0) -- (0.1,0.98);
+			\draw[loyola-gold,line width=.5pt] (0.95,0.18) -- (0.98,0.18);
+			\draw[loyola-gold,line width=.5pt] (0.98,0.18) -- (0.98,0.98);
+		\end{scope}
+	\end{tikzpicture}
 }
 
 % Customize Margin
-\setbeamersize{text margin left=.12\paperwidth,text margin right=.11\paperwidth} 
+\setbeamersize{text margin left=.12\paperwidth,text margin right=.11\paperwidth}
 
 % Customize title
 \setbeamercolor{frametitle}{fg=loyola-gold}
 \newlength{\titlevspace}
 \setlength{\titlevspace}{\dimexpr.13\paperheight - 20pt\relax}
 \setbeamertemplate{frametitle}{\vspace*{\titlevspace}
-    \insertframetitle}
+	\insertframetitle}
 
 % Customize footnote
 \newcommand{\slidelogo}{}
 \newcommand{\slidefoot}{}
 \setbeamertemplate{footline}
 {
-    \hspace*{.12\paperwidth}
-    \includesvg[width=.1\paperwidth,keepaspectratio]{\slidelogo}
-    \makebox[.4\paperwidth][c]{\slidefoot}
-    \makebox[.1\paperwidth][c]{\insertdate}
-    \hspace{.01\paperwidth}
-    \makebox[.1\paperwidth][c]{\insertframenumber/\inserttotalframenumber}
-    \vspace*{.06\paperheight}
+	\hspace*{.12\paperwidth}
+	\includesvg[width=.1\paperwidth,keepaspectratio]{\slidelogo}
+	\makebox[.4\paperwidth][c]{\slidefoot}
+	\makebox[.1\paperwidth][c]{\insertdate}
+	\hspace{.01\paperwidth}
+	\makebox[.1\paperwidth][c]{\insertframenumber/\inserttotalframenumber}
+	\vspace*{.06\paperheight}
 }
 
 % Customize enumerate/itemize style
@@ -123,63 +123,63 @@
 \setbeamerfont*{author}{size={\fontsize{10}{13}}, series=\fontseries{bm}, shape=\fontshape{n}}
 \defbeamertemplate*{title page}{customized}[1][]
 {
-    \usebeamerfont{title}\usebeamercolor[fg]{title}
-    \inserttitle\par
-    \bigskip
-    \usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}
-    \hfill\insertsubtitle\par
-    \bigskip
-    \usebeamerfont{author}\usebeamercolor[fg]{author}
-    \insertauthor\par
-    \insertinstitute\par
-    \insertdate\par
+	\usebeamerfont{title}\usebeamercolor[fg]{title}
+	\inserttitle\par
+	\bigskip
+	\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}
+	\hfill\insertsubtitle\par
+	\bigskip
+	\usebeamerfont{author}\usebeamercolor[fg]{author}
+	\insertauthor\par
+	\insertinstitute\par
+	\insertdate\par
 }
 
 \newcommand{\titlelogo}{}
 \NewEnviron{titleframe}[1]{
-    {
-        \setbeamertemplate{background canvas}{
-            \begin{tikzpicture}[remember picture,overlay,shift=(current page.north west)]
-            \begin{scope}[x={(current page.north east)},y={(current page.south west)}]
-                \fill[loyola-maroon] (0,0) rectangle (1,1);
-                \draw[loyola-gold,line width=.5pt] (0.1,0) -- (0.1,0.98);
-            \end{scope}
-            \end{tikzpicture}
-        }
-        \setbeamercolor{footline}{fg=white}
-        \setbeamertemplate{footline}{
-            \hspace*{.12\paperwidth}
-            \includesvg[width=.2\paperwidth,keepaspectratio]{\titlelogo}
-            \makebox[.4\paperwidth][c]{\slidefoot}
-            \makebox[.1\paperwidth][c]{\insertdate}
-            \hspace{.01\paperwidth}
-            \makebox[.1\paperwidth][c]{\insertframenumber/\inserttotalframenumber}
-            \vspace*{.06\paperheight}
-        }
-        \setbeamertemplate{frametitle}{\vspace*{.25\paperheight}
-             \selectfont\insertframetitle}
-        \setbeamercolor{normal text}{fg=white}
-        \setbeamercolor{item}{fg=white}
-        \begin{frame}{#1}
-            \usebeamercolor[fg]{normal text}
-            \BODY
-        \end{frame}
-    }
+	{
+			\setbeamertemplate{background canvas}{
+				\begin{tikzpicture}[remember picture,overlay,shift=(current page.north west)]
+					\begin{scope}[x={(current page.north east)},y={(current page.south west)}]
+						\fill[loyola-maroon] (0,0) rectangle (1,1);
+						\draw[loyola-gold,line width=.5pt] (0.1,0) -- (0.1,0.98);
+					\end{scope}
+				\end{tikzpicture}
+			}
+			\setbeamercolor{footline}{fg=white}
+			\setbeamertemplate{footline}{
+				\hspace*{.12\paperwidth}
+				\includesvg[width=.2\paperwidth,keepaspectratio]{\titlelogo}
+				\makebox[.4\paperwidth][c]{\slidefoot}
+				\makebox[.1\paperwidth][c]{\insertdate}
+				\hspace{.01\paperwidth}
+				\makebox[.1\paperwidth][c]{\insertframenumber/\inserttotalframenumber}
+				\vspace*{.06\paperheight}
+			}
+			\setbeamertemplate{frametitle}{\vspace*{.25\paperheight}
+				\selectfont\insertframetitle}
+			\setbeamercolor{normal text}{fg=white}
+			\setbeamercolor{item}{fg=white}
+			\begin{frame}{#1}
+				\usebeamercolor[fg]{normal text}
+				\BODY
+			\end{frame}
+		}
 }
 
 % Customize other page styles:
 \NewEnviron{notitleframe}{
-    {
-        \setbeamertemplate{background canvas}{
-            \begin{tikzpicture}[remember picture,overlay,shift=(current page.north west)]
-            \begin{scope}[x={(current page.north east)},y={(current page.south west)}]
-                \draw[loyola-gold,line width=.5pt] (0.1,0) -- (0.1,0.98);
-            \end{scope}
-            \end{tikzpicture}
-        }
-        \begin{frame}
-            \usebeamercolor[fg]{normal text}
-            \BODY
-        \end{frame}
-    }
+	{
+			\setbeamertemplate{background canvas}{
+				\begin{tikzpicture}[remember picture,overlay,shift=(current page.north west)]
+					\begin{scope}[x={(current page.north east)},y={(current page.south west)}]
+						\draw[loyola-gold,line width=.5pt] (0.1,0) -- (0.1,0.98);
+					\end{scope}
+				\end{tikzpicture}
+			}
+			\begin{frame}
+				\usebeamercolor[fg]{normal text}
+				\BODY
+			\end{frame}
+		}
 }
