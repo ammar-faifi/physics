@@ -2,6 +2,7 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{biblatex}
+\addbibresource{ref.bib}
 
 \title{Light-Light Scattering: Feynman Diagrams}
 \author{Alfaifi, Ammar \and Al-Ali, Muhammad}
@@ -17,7 +18,7 @@
 
 \section{Introduction}
 
-Light-light scattering, also known as photon-photon scattering, is a fundamental quantum electrodynamic (QED) process in which two photons interact and scatter off each other. The phenomenon was first predicted by Einstein in 1917 \cite{einstein1917theory}, who showed that photons have momentum and can exert a force on each other. However, it was not until the development of quantum field theory in the 1950s that a complete theory of light-light scattering was developed.
+Light-light scattering, also known as photon-photon scattering, is a fundamental quantum electrodynamic (QED) process in which two photons interact and scatter off each other. The phenomenon was first predicted by Einstein in 1917 \cite{einstein}, who showed that photons have momentum and can exert a force on each other. However, it was not until the development of quantum field theory in the 1950s that a complete theory of light-light scattering was developed.
 
 Light-light scattering is a purely quantum mechanical process and cannot be explained using classical physics. It is a rare phenomenon, as the probability of two photons interacting is very small. However, the process has important implications for the study of the fundamental nature of light and its interactions with matter.
 
@@ -37,7 +38,7 @@ Light-by-light scattering has many potential applications in the fields of physi
 
 The theory of light-light scattering is based on quantum electrodynamics (QED), which is the quantum mechanical theory of the electromagnetic field and its interactions with charged particles. In QED, photons are treated as particles that can interact with each other through the exchange of virtual particles such as electron-positron pairs.
 
-The Feynman diagrams for light-light scattering are shown in Figure 1. The process can be thought of as the interaction of two photons, labeled as 1 and 2, which scatter off each other and produce two outgoing photons, labeled as 3 and 4. The process is mediated by the exchange of a virtual electron-positron pair, which is created and annihilated in the process.
+The Feynman diagrams for light-light scattering are shown in Figure \ref{fig:light-light-scattering-feynman}. The process can be thought of as the interaction of two photons, labeled as 1 and 2, which scatter off each other and produce two outgoing photons, labeled as 3 and 4. The process is mediated by the exchange of a virtual electron-positron pair, which is created and annihilated in the process.
 
 \begin{figure}[h]
 	\centering
@@ -87,7 +88,7 @@ In a result published in Nature Physics in 2017, the ATLAS Collaboration found t
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.7\linewidth]{figures/EventDisplay_LbyL.png}
+	\includegraphics[width=0.5\linewidth]{figures/EventDisplay_LbyL.png}
 	\caption{ATLAS event display showing the energy deposits of two photons in the electromagnetic
 		calorimeter (green) on opposite sides and no other activity in the detector, which is the clean signature
 		of light-by-light scattering. The Feynman diagram of this process is shown in the lower right corner.
@@ -97,16 +98,31 @@ In a result published in Nature Physics in 2017, the ATLAS Collaboration found t
 
 
 \subsection{Light-by-Light Scattering at Low Energies}%
+\begin{figure}[!th]
+	\centering
+	\includegraphics[width=0.5\linewidth]{figures/photon-photon-scattering.jpg}
+	\caption{The cross-section for photon-photon scattering as a function of photon frequency (from Lifshitz et al. - 1982) }
+	\label{fig:corss-secction}
+\end{figure}
+\begin{figure}[!th]
+	\centering
+	\includegraphics[width=0.6\linewidth]{figures/photons.jpg}
+	\caption{Three different types of interactions between photons. In the left picture an incoming photon interacts with e.g. the strong external field from an atomic nucleus, resulting in an outgoing photon with new characteristics (Delbrück scattering); in the middle picture a single photon interacts with e.g. a strong external magnetic field as to produce two low-frequency photons (photon splitting); finally, in picture to the right two photons interacts directly via the quantum vacuum, producing two scattered photons. (Courtesy: Mattias Marklund)}
+	\label{fig:photon-types}
+\end{figure}
+photon–photon scattering is a non-classical effect arising in quantum electrodynamics (QED) due to virtual electron–positron pairs in vacuum. Under every-day circumstances, the effect is very weak (see FIG. 1). However, under the right conditions the interaction between photons and these virtual pairs will result in what is known as photon–photon collisions. Close relatives to this effect is Delbrück scattering and photon splitting (see FIG. 2). Formulated as an effective field theory, using the Heisenberg–Euler Lagrangian (Heisenberg \& Euler (1936); Schwinger (1951)), such scattering results in nonlinear corrections to Maxwell’s vacuum equations, similar in form to what is known as Kerr nonlinearities in nonlinear optics.
+The effective self-interaction term in Maxwell’s equations is small (proportional to the fine structure constant squared), which means that the field strengths need to reach appreciable values until such effects become pronounced (Marklund \& Shukla (2006); Mourou et al. (2006)). However, the smallness of the photon-photon scattering cross section has been argued to be a possible window to new physics (Anoniadis (1998); Arkani-hamed et al. (1998); Cheung (1999); Davoudiasl (1999)), such as weak scale quantum gravity. Physical implications, as well as possible detection techniques, of the effects of photon–photon scattering have attracted interest since the 1930’s (for surveys, see Refs. Marklund \& Shukla (2006) and Mourou et al. (2006) and references therein), and the topic is hotter than ever.
 
 \subsection{Positron Production in Multiphoton Light-by-Light Scattering}%
 \label{subsec:positron}
 
 \label{subsec:light-light-low-energy}
-A signal of 106±14 positrons above background has been observed in collisions of a low-emittance 46.6 GeV electron beam with terawatt pulses from a Nd:glass laser at 527 nm wavelength in an experiment at the Final Focus Test Beam at SLAC. The positrons are interpreted as arising from a two-step process in which laser photons are backscattered to GeV energies by the electron beam followed by a collision between the high-energy photon and several laser photons to produce an electron-positron pair. These results are the first laboratory evidence for inelastic light-by-light scattering involving only real photons.
+A signal of 106±14 positrons above background has been observed in collisions of a low-emittance 46.6 GeV electron beam with terawatt pulses from a Nd:glass laser at 527 nm wavelength in an experiment at the Final Focus Test Beam at SLAC. The positrons are interpreted as arising from a two-step process in which laser photons are backscattered to GeV energies by the electron beam followed by a collision between the high-energy photon and several laser photons to produce an electron-positron pair. These results are the first laboratory evidence for inelastic light-by-light scattering involving only real photons.\cite{PhysRevLett.79.1626}
 
 \section{Conclusion}
-
 In conclusion, light-by-light scattering is a fascinating and complex phenomenon that is still not fully understood. With the help of advanced technologies such as the LHC and Feynman diagrams, we can continue to study and learn more about this elusive interaction.
 
-    \printbibliography
+\newpage
+\printbibliography
+
 \end{document}
